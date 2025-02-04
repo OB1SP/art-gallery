@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="open" class="open">
+        <div id="burger" class="burger"></div>
+        <li><a href="">Accueil</a></li>
+        <li><a href="">A propos</a></li>
+        <li><a href="">Gallerie</a></li>
+        <li><a href="">Contact</a></li>
+    </nav>
+    
+    <main>
+        <div class="boite">
+            <img src="img/capital.jpg" style="width: 100%;" alt="">
+        </div>
+        <div class="boite">
+            <img src="img/tour2babel.jpg" style="width: 100%;" alt="">
+        </div>
+        <div class="boite">
+            <img src="img/enfer.jpg" style="width: 100%;" alt="">
+        </div>
+    </main>
+
+    <script>
+        const burger = document.querySelector(".burger")
+        const open = document.querySelector(".open")
+
+
+        burger.addEventListener("click", () =>{
+            burger.classList.toggle("close")
+            open.classList.toggle("open")
+
+        })
+
+
+    </script>
+</body>
+</html>
